@@ -13,130 +13,146 @@
     <!-- Styles & Scripts
     ========================================================= -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Akronim|Nunito|Open+Sans|Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8ad857e05.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
 	<!-- "Above the fold" content
     ========================================================= -->
-	<section id="header">
+	<div id="header" class="grid-container header">
 
-		<div class="logo-container">
-			<img src="assets/images/logo_dark_bg.png" class="logo" alt="logo" id="logo" width="300" height="554">
-			<h1>Nicholas J Ferrari</h1>
-		</div>
+		<img src="assets/images/logo_dark_bg.png" class="logo" alt="logo" id="logo" width="300" height="554">
+		<h1 class="h1">Nicholas J Ferrari</h1>
 
 		<!-- Navigation
 	    ========================================================= -->
-		<nav>
+		<nav class="main-nav">
 			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#port">Portfolio</a></li>
-				<li><a href="#contact">Contact</a></li>
+				<li><a class="nav-links" href="#about">About Me</a></li>
+				<li><a class="nav-links" href="#port">Portfolio</a></li>
+				<li><a class="nav-links" href="#contact">Contact</a></li>
+				<div class="line"></div>
 			</ul>
 		</nav>
 
-	</section>
+	</div>
 
 	<!-- "Below the fold"
     ========================================================= -->
-	<section id="about">
+	<div id="about" class="grid-container about">
 
 		<h2>About Me</h2>
 
-		<img src="assets/images/me.jpg" alt="Pic of Nick" id="me" height="500" width="500">
+		<img class="pic" src="assets/images/placeholder-man.jpg" alt="Pic of Nick" id="me" height="500" width="700">
 
-		<p id="bio">
+		<p id="bio" class="bio">
 			My name is Nicholas Ferrari, and I love to learn. I'm constantly trying to expand my repertoire by learning new technologies and skills. Web development is a way to use what I learn to build powerful apps and create immersive user experiences.
 		</p>
 
-	</section>
+	</div>
 
-	<section id="port">
+	<div id="port" class="grid-container port">
 
 		<h2>Portfolio</h2>
 
-		<div id="skills" class="port-container">
+		<div class="skills grid-container">
+			<h3 class="h-three">Skills</h3>
+			<ul>
+				<li class="skill s-one"><i class="icon fab fa-html5 fa-10x"></i></li>
+				<li class="skill s-two"><i class="icon fab fa-css3-alt fa-10x"></i></li>
+				<li class="skill s-three"><i class="icon fab fa-js-square fa-10x"></i></li>
+				<li class="skill s-four"><i class="icon fab fa-php fa-10x"></i></li>
+			</ul>
+		</div>
+
+		<div class="work grid-container">
+
+			<h3 class="h-three">Work</h3>
+				<div class="dt-one"><a href="splendorous.html"><img src="splendorous.png"></a></div>
+				<div class="example dd-one">
+					<h4>Create the Code</h4>
+					<p class="description">
+						Splendorous is a website template. This was my first project. I was given an image of what the finished site should look like and was tasked with coding a "pixel perfect" web page.
+					</p>
+					<p class="skills-used">
+						HTML5, CSS3, Photoshop
+					</p>
+				</div>
+
+				
+				<div class="dt-two"><a href="discog.html"><img src="discog.png"></a></div>
+				<div class="example dd-two">
+					<h4>Discography</h4>
+					<p class="description">
+						I designed and coded a discography website for Chromatics, an indie low-fi rock band. I used Photoshop to design the logo and mock up style-tiles for feedback. I coded the site using the Bootstrap framework.
+					</p>
+					<p class="skills-used">
+						HTML5, CSS3, JavaScript, Photoshop, Bootstrap
+					</p>
+				</div>
+
+				
+				<div class="dt-three"><a href="revamp.html"><img src="revamp.png"></a></div>
+				<div class="example dd-three">
+					<h4>Discography Revamp</h4>
+					<p class="description">
+						I was tasked with <a href="http://site36.wdiv.francistuttle.edu/">Rikki Eichler</a>'s discography project to revamp using PHP. I reorganized the code in a PHP framework; adived back-end functionality and dynamically-generated content using a database in MySQL and phpMyAdmin; and adived an admin div for updating content on the "albums" page.
+					</p>
+					<p class="skills-used">
+						HTML5, CSS3, PHP, PDO, SQL, MySQL, Bootstrap, Apache, XAMPP, phpMyAdmin
+					</p>
+				</div>
+
+				
+				<div class="dt-four"><a href="https://terranavis.life/html/index.php"><img src="bpa.png"></a></div>
+				<div class="example dd-four">
+					<h4>BPA: Website Design Team, Project Manager and Content Creator</h4>
+					<p class="description">
+						I participated in Business Professionals of America's Website Design Team competition with <a href="savammah">Savannah Skinner</a> and <a href="noshin">Noshin Rahman</a>. As Content Creator, I gathered, researched, wrote and edited the content of the site. As Project Manager, I coordinated the team's efforts using Basecamp, Slack, GitHub, Dropbox and pCloud. I designed an HTML slideshow for our presentation to judges at the regional and national levels.
+					</p>
+					<p class="skills-used">
+						HTML5, CSS3, PHP, JavaScript, Git, GitHub, Apache, XAMPP, Photoshop, Illustrator, 
+					</p>
+				</div>
+		</div>
+
+	</div>
+
+	<footer class="grid-container footer">
+
+		<div class="other">
+			<h2>Other Projects</h2>
+			<h3><a href="playground.php">Code Playground</a></h3>
+			<p>I'm currently self-enrolled in <a href="odinproject.com">The Odin Project</a>, and this is where I will be uploading all my projects from that course as well as anything else I build. They are mostly simple JavaScript apps right now.</p>
+		</div>
+
+		<div id="contact" class="grid-container contact">
+				<h2>Contact</h2>
+				<div class="form">
+					<form>
+						<label for="name">Name:</label>
+						<input type="text" id="name" name="name">
+						<label for="email">Email:</label>
+						<input type="email" id="email" name="email">
+						<label for="comments">Comments: </label>
+						<textarea id="comments">Type your message here...</textarea>
+					</form>
+					<button type="submit">Send!</button>
+				</div>
+		</div>
+
+		<div class="social">
 			
-			<h3>Skills</h3>
-
-			<img src="assets/images/html.png" alt="html logo" height="200" width="200">
-			<img src="assets/images/css.png" alt="css logo" height="200" width="200">
-			<img src="assets/images/php.png" alt="php logo" height="200" width="200">
-			<img src="assets/images/js.png" alt="js logo" height="200" width="200">
+			<h2 class="h-two">Follow me!</h2>
+			<a href="twitter.com">Twitter</a>
+			<a href="gihub.com">github</a>
 
 		</div>
 
-		<div id="examples" class="port-container">
+		<p class="copy">&copy; Copyright Nicholas Ferrari 2020</p>
 
-			<h3>Examples</h3>
-
-			<div class="example">
-				<h4>Create the Code</h4>
-				<p class="description">
-					Splendorous is a website template. This was my first project. I was given a .psd image of what the finished site should look like and was tasked with coding a "pixel perfect" web page.
-				</p>
-				<p class="skills-used">
-					HTML, CSS, Photoshop
-				</p>
-			</div>
-
-			<div class="example">
-				<h4>Tech Research</h4>
-				<p class="description">
-					I was given a technology to research and create a single-page website for. The technology is the LESS language extension for CSS. I was given a style-tile to use for colors, fonts and textures.
-				</p>
-				<p class="skills-used">
-					HTML, CSS, Photoshop
-				</p>
-			</div>
-
-			<div class="example">
-				<h4>Discography</h4>
-				<p class="description">
-					I designed and coded a discography website for Chromatics, an indie low-fi rock band. I used Photoshop to design the logo and mock up style-tiles for feedback. I coded the site using the Bootstrap framework.
-				</p>
-				<p class="skills-used">
-					HTML, CSS, JavaScript, Photoshop, Bootstrap
-				</p>
-			</div>
-
-			<div class="example">
-				<h4>Discography Revamp</h4>
-				<p class="description">
-					I was given <a href="http://site36.wdd.francistuttle.edu/">Rikki Eichler</a>'s discography project to revamp using PHP. I reorganized the code in a PHP framework; added back-end functionality and dynamically-generated content using a database in MySQL and phpMyAdmin; and added an admin section for updating content on the "albums" page.
-				</p>
-				<p class="skills-used">
-					HTML, CSS, PHP, PDO, SQL, MySQL, Bootstrap, Apache, XAMPP, phpMyAdmin
-				</p>
-			</div>
-
-		</div>
-
-	</section>
-
-	<section id="contact">
-
-			<h2>Contact</h2>
-
-			<div class="form-container">
-				<form>
-					<label for="name">Name:</label>
-					<input type="text" id="name" name="name">
-					<label for="email">Email:</label>
-					<input type="email" id="email" name="email">
-					<label for="comments">Comments: </label>
-					<textarea id="comments">Type your message here...</textarea>
-				</form>
-				<button type="submit">Send!</button>
-			</div>
-
-	</section>
-
-		<footer>
-
-			<p id="copyright">&copy; Copyright Nicholas Ferrari 2020</p>
-
-		</footer>
+	</footer>
 
 
 </body>

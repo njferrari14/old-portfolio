@@ -2,11 +2,11 @@
 COLORS
 ***************************************
 
+#25ced1 -- bright light blue (links)
 #f4c803 -- yellow
-#ec4d00 -- orange
-#9b3597-- purple
-#136498 -- blue
-
+#00a6a6 -- muted light blue (logo 'j')
+#cc3399 -- purple
+#df2879 -- pink
 /**************************************
 RESET
 ***************************************/
@@ -37,7 +37,7 @@ li,
 figure,
 figcaption,
 blockquote,
-dl,
+dd,
 dd {
   margin: 0;
 }
@@ -97,10 +97,20 @@ GLOBAL
 }
 
 html {
+	font-family: 'Nunito', sans-serif;
 	width: 100%;
 	background-color: #000;
 	color: #fff;
 }
+
+a {
+	text-decoration: none;
+	color: #25ced1;
+}
+
+	a:hover {
+		color: #df2879;
+	}
 
 ul {
 	list-style: none;
@@ -113,22 +123,26 @@ ul li {
 	padding: 10px;
 }
 
-a {
-	display: inline-block;
-	width: 100%;
-	text-align: center;
-	text-decoration: none;
-	color: #00A6A6;
-	font-style: bold;
+h1, h2 {
+	color: #f4da03;
 }
-	a:hover, a:focus {
-		color: #DF2879;
-	}
 
-h1 {
-	color: #f4c803;
-	font-size: 200%;
+h2 {
+	font-size: 3em;
 }
+
+h3 {
+	text-align: center;
+	font-size: 2em;
+	color: #cc3399;
+}
+
+label {
+	display: block;
+}
+/**************************************
+HEADER
+***************************************/
 
 nav {
 	display: flex;
@@ -138,14 +152,166 @@ nav {
 	font-size: 150%;
 }
 
-ul {
-	display: flex;
+.grid-container, .grid-container-sm {
+	display: grid;
+	grid-template-rows: auto;
 }
 
-.logo-container {
-	width: 100%;
-	text-align: center;
+.grid-container {
+	grid-template-columns: 25% 25% 25% 25%;
 }
+
+.header {
+	grid-template-areas:
+		". logo logo ."
+		" . h-one h-one ."
+		". nav nav .";
+	margin: 150px auto 400px;
+}
+
 .logo {
+	grid-area: logo;
+	min-width: 300px;
 	margin: 0 auto;
 }
+
+.h1 {
+	grid-area: h-one;
+	text-align: center;
+	font-size: 3em;
+}
+
+.main-nav {
+	grid-area: nav;
+}
+
+.nav-links {
+	width: 100%;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+/**************************************
+ABOUT ME
+***************************************/
+
+.about {
+	grid-template-areas: 
+		". h-two h-two ."
+		"pic . bio .";
+}
+
+h2 {
+	grid-area: h-two;
+	text-align: center;
+}
+
+.pic {
+	grid-area: pic;
+}
+
+.bio {
+	grid-area: bio;
+}
+
+/**************************************
+PORTFOLIO
+***************************************/
+
+.port {
+	grid-template-areas: 
+		". h-two h-two ."
+		"skills skills skills skills"
+		"work work work work";
+}
+
+.work {
+	grid-area: work;
+	grid-template-areas: 
+		". h-three h-three ."
+		"dt-one . dd-one ."
+		". dd-two dt-two ."
+		". dt-three dd-three ."
+		". dd-four . dt-four";
+}
+
+.skills {
+	grid-area: skills;
+	grid-template-areas: 
+		". h-three h-three ."
+		"skill skill skill skill"
+}
+
+.example {
+	color: #fff;
+}
+
+.h-three {
+	grid-area: h-three;
+}
+
+.dt-one {
+	grid-area: dt-one;
+}
+
+.dt-two {
+	grid-area: dt-two;
+}
+
+.dt-three {
+	grid-area: dt-three;
+}
+
+.dt-four {
+	grid-area: dt-four;
+}
+
+.dd-one {
+	grid-area: dd-one;
+}
+
+.dd-two {
+	grid-area: dd-two;
+}
+
+.dd-three {
+	grid-area: dd-three;
+}
+
+.dd-four {
+	grid-area: dd-four;
+}
+
+.icon {
+	justify-self: center;
+}
+
+/**************************************
+CONTACT
+***************************************/
+
+.footer {
+	grid-template-areas: 
+		"other contact contact social"
+		"copy . . .";
+}
+
+.contact {
+	grid-area: contact;
+	grid-template-areas: 
+		". h-two h-two ."
+		". form form .";
+}
+
+.form {
+	grid-area: form;
+	text-align: center;
+}
+.other {
+	grid-area: other;
+}
+
+.social {
+	grid-area: social;
+}
+
