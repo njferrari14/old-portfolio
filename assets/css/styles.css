@@ -159,6 +159,7 @@ nav {
 
 .grid-container {
 	grid-template-columns: 25% 25% 25% 25%;
+	margin-bottom: 100px;;
 }
 
 .header {
@@ -166,13 +167,13 @@ nav {
 		". logo logo ."
 		" . h-one h-one ."
 		". nav nav .";
-	margin: 150px auto 400px;
+	margin: 50px auto 400px;
 }
 
 .logo {
 	grid-area: logo;
 	min-width: 300px;
-	margin: 0 auto;
+	margin: 0 auto 50px;
 }
 
 .h1 {
@@ -208,6 +209,7 @@ h2 {
 
 .pic {
 	grid-area: pic;
+	display: flex;
 }
 
 .bio {
@@ -225,6 +227,42 @@ PORTFOLIO
 		"work work work work";
 }
 
+.skills {
+	grid-area: skills;
+	grid-template-areas: 
+		". h-three h-three ."
+		"skill skill skill skill"
+}
+
+.skill-list {
+	grid-area: skill;
+	justify-self: center;
+}
+
+.s-name {
+	text-align: center;
+}
+
+.icon {
+	justify-self: center;
+}
+
+.i-one {
+	color: #25ced1;
+}
+
+.i-two {
+	color: #df2879;
+}
+
+.i-three, .i-five {
+	color: #f4da03;
+}
+
+.i-four {
+	color: #cc3399;
+}
+
 .work {
 	grid-area: work;
 	grid-template-areas: 
@@ -233,13 +271,6 @@ PORTFOLIO
 		". dd-two dt-two ."
 		". dt-three dd-three ."
 		". dd-four . dt-four";
-}
-
-.skills {
-	grid-area: skills;
-	grid-template-areas: 
-		". h-three h-three ."
-		"skill skill skill skill"
 }
 
 .example {
@@ -280,10 +311,6 @@ PORTFOLIO
 
 .dd-four {
 	grid-area: dd-four;
-}
-
-.icon {
-	justify-self: center;
 }
 
 /**************************************
