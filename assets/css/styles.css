@@ -235,50 +235,8 @@ PORTFOLIO
 	grid-template-areas: 
 		". h-two h-two ."
 		"work work work work"
-		"skills skills skills skills";
-}
-
-/** Skills **/
-
-.skills {
-	grid-area: skills;
-	grid-template-areas: 
-		". . . h-three h-three . . ."
-		"skill skill skill skill skill skill skill skill";
-	margin-bottom: 100px;
-}
-
-.h-three {
-	grid-area: h-three;
-}
-
-.skill-list {
-	grid-area: skill;
-	justify-self: center;
-}
-
-.s-name {
-	text-align: center;
-}
-
-.s-item {
-	margin: 0 10px;
-}
-
-.i-one {
-	color: #25ced1;
-}
-
-.i-two {
-	color: #df2879;
-}
-
-.i-three, .i-five {
-	color: #f4da03;
-}
-
-.i-four {
-	color: #cc3399;
+		"skills skills skills skills"
+		". other other .";
 }
 
 /** Work **/
@@ -335,14 +293,64 @@ PORTFOLIO
 	font-weight: 900;
 }
 
+/** Skills **/
+
+.skills {
+	grid-area: skills;
+	grid-template-areas: 
+		". . . h-three h-three . . ."
+		"skill skill skill skill skill skill skill skill";
+	margin-bottom: 100px;
+}
+
+.h-three {
+	grid-area: h-three;
+}
+
+.skill-list {
+	grid-area: skill;
+	justify-self: center;
+}
+
+.s-name {
+	text-align: center;
+}
+
+.s-item {
+	margin: 0 10px;
+}
+
+.i-one {
+	color: #25ced1;
+}
+
+.i-two {
+	color: #df2879;
+}
+
+.i-three, .i-five {
+	color: #f4da03;
+}
+
+.i-four {
+	color: #cc3399;
+}
+
+/* Other Projects */
+
+.other {
+	grid-area: other;
+	margin-bottom: 100px;
+}
+
 /**************************************
 FOOTER
 ***************************************/
 
 .footer {
 	grid-template-areas: 
-		". other other . contact contact contact ."
-		"copy copy . . social social social social";
+		". . contact contact contact contact . ."
+		"copy copy copy . social social social social";
 	background-color: #202020;
 }
 
@@ -353,13 +361,14 @@ FOOTER
 .contact {
 	grid-area: contact;
 	grid-template-areas: 
-		". h-two h-two ."
+		"h-two h-two h-two h-two"
 		"form form form form";
 }
 
 .form {
 	grid-area: form;
 	text-align: center;
+	margin-bottom: 50px;
 }
 	.form input, .form textarea {
 		width: 75%;
@@ -370,17 +379,14 @@ FOOTER
 		max-height: 200px;
 	}
 
-.other {
-	grid-area: other;
-}
-
 .social {
 	grid-area: social;
 	text-align: center;
 }
-	.social h2 {
+	.social h3 {
 		display: inline-block;
 		margin-bottom: 0;
+		color: #f4c803;
 	}
 
 	.social a {
