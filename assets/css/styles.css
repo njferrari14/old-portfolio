@@ -92,10 +92,6 @@ select {
 /**************************************
 GLOBAL
 ***************************************/
-* {
-	box-sizing: border-box;
-}
-
 html {
 	font-family: 'Nunito', sans-serif;
 	width: 100%;
@@ -129,12 +125,19 @@ h1, h2 {
 
 h2 {
 	font-size: 3em;
+	margin: 50px auto;
 }
 
 h3 {
 	text-align: center;
 	font-size: 2em;
 	color: #cc3399;
+	margin-bottom: 25px;
+}
+
+h4 {
+	font-size: 1.25em;
+	margin-bottom: 15px;
 }
 
 label {
@@ -152,22 +155,26 @@ nav {
 	font-size: 150%;
 }
 
-.grid-container, .grid-container-sm {
+.grid-container, .grid-container-sm, .grid-container-lg {
 	display: grid;
 	grid-template-rows: auto;
 }
 
 .grid-container {
-	grid-template-columns: 25% 25% 25% 25%;
-	margin-bottom: 100px;;
+	grid-template-columns: repeat(4, 25%);
 }
+
+.grid-container-lg {
+	grid-template-columns: repeat(8, 12.5%);
+}
+
 
 .header {
 	grid-template-areas:
 		". logo logo ."
 		" . h-one h-one ."
 		". nav nav .";
-	margin: 50px auto 400px;
+	margin: 100px auto 400px;
 }
 
 .logo {
@@ -176,7 +183,7 @@ nav {
 	margin: 0 auto 50px;
 }
 
-.h1 {
+h1 {
 	grid-area: h-one;
 	text-align: center;
 	font-size: 3em;
@@ -198,8 +205,9 @@ ABOUT ME
 
 .about {
 	grid-template-areas: 
-		". h-two h-two ."
-		"pic . bio .";
+		". . . h-two h-two . . ."
+		". pic pic . . bio bio .";
+	padding: 50px 0 200px;
 }
 
 h2 {
@@ -210,10 +218,13 @@ h2 {
 .pic {
 	grid-area: pic;
 	display: flex;
+	border-radius: 5px;
 }
 
 .bio {
+	font-size: 1.25em;
 	grid-area: bio;
+	align-self: center;
 }
 
 /**************************************
@@ -223,15 +234,22 @@ PORTFOLIO
 .port {
 	grid-template-areas: 
 		". h-two h-two ."
-		"skills skills skills skills"
-		"work work work work";
+		"work work work work"
+		"skills skills skills skills";
 }
+
+/** Skills **/
 
 .skills {
 	grid-area: skills;
 	grid-template-areas: 
-		". h-three h-three ."
-		"skill skill skill skill"
+		". . . h-three h-three . . ."
+		"skill skill skill skill skill skill skill skill";
+	margin-bottom: 100px;
+}
+
+.h-three {
+	grid-area: h-three;
 }
 
 .skill-list {
@@ -243,8 +261,8 @@ PORTFOLIO
 	text-align: center;
 }
 
-.icon {
-	justify-self: center;
+.s-item {
+	margin: 0 10px;
 }
 
 .i-one {
@@ -263,82 +281,126 @@ PORTFOLIO
 	color: #cc3399;
 }
 
+/** Work **/
+
 .work {
 	grid-area: work;
-	grid-template-areas: 
-		". h-three h-three ."
-		"dt-one . dd-one ."
-		". dd-two dt-two ."
-		". dt-three dd-three ."
-		". dd-four . dt-four";
 }
 
 .example {
 	color: #fff;
+	margin: 50px auto;
+}
+	
+	.example:not(.e-one) {
+		margin: 100px auto;
+	}
+
+	.e-left {
+	grid-template-areas: 
+		" . e-link e-link . blurb blurb . ."
+	}
+
+	.e-right {
+	grid-template-areas: 
+		" . . blurb blurb . e-link e-link ."
+	}
+
+.e-pic {
+	border: 10px double #25ced1;
+	border-radius: 500px;
+}
+	.e-pic:hover {
+		border-color: #df2879;
+	}
+
+.e-link {
+	 grid-area: e-link;
 }
 
-.h-three {
-	grid-area: h-three;
+.blurb {
+	grid-area: blurb;
 }
 
-.dt-one {
-	grid-area: dt-one;
+.e-header {
+	color: #f4da03;
 }
 
-.dt-two {
-	grid-area: dt-two;
+.example p {
+	margin-bottom: 5px;
 }
 
-.dt-three {
-	grid-area: dt-three;
-}
-
-.dt-four {
-	grid-area: dt-four;
-}
-
-.dd-one {
-	grid-area: dd-one;
-}
-
-.dd-two {
-	grid-area: dd-two;
-}
-
-.dd-three {
-	grid-area: dd-three;
-}
-
-.dd-four {
-	grid-area: dd-four;
+.skills-used {
+	color: #df2879;
+	font-weight: 900;
 }
 
 /**************************************
-CONTACT
+FOOTER
 ***************************************/
 
 .footer {
 	grid-template-areas: 
-		"other contact contact social"
-		"copy . . .";
+		". other other . contact contact contact ."
+		"copy copy . . social social social social";
+	background-color: #202020;
+}
+
+.footer h2 {
+	margin-bottom: 20px;
 }
 
 .contact {
 	grid-area: contact;
 	grid-template-areas: 
 		". h-two h-two ."
-		". form form .";
+		"form form form form";
 }
 
 .form {
 	grid-area: form;
 	text-align: center;
 }
+	.form input, .form textarea {
+		width: 75%;
+		border-radius: 5px;
+		min-width: 50%;
+		max-width: 100%;
+		min-height: 48px;
+		max-height: 200px;
+	}
+
 .other {
 	grid-area: other;
 }
 
 .social {
 	grid-area: social;
+	text-align: center;
 }
+	.social h2 {
+		display: inline-block;
+		margin-bottom: 0;
+	}
 
+	.social a {
+		display: inline-block;
+		line-height: 10px;
+		margin-left: 40px;
+	}
+
+.icon {
+	display: inline-block;
+	border-radius: 100px;
+	width: 35px;
+}
+	a:last-child .icon {
+		padding: 2.955px 0;
+		background-color: #fff;
+	}
+
+.copy {
+	grid-area: copy;
+	align-self: end;
+	padding: 10px;
+}
