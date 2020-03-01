@@ -125,7 +125,7 @@ h1, h2 {
 
 h2 {
 	font-size: 3em;
-	margin: 50px auto;
+	margin: 25px auto;
 }
 
 h3 {
@@ -256,12 +256,12 @@ PORTFOLIO
 
 	.e-left {
 	grid-template-areas: 
-		" . e-link e-link . blurb blurb . ."
+		" . e-link e-link . blurb blurb blurb ."
 	}
 
 	.e-right {
 	grid-template-areas: 
-		" . . blurb blurb . e-link e-link ."
+		" . blurb blurb blurb . e-link e-link ."
 	}
 
 .e-pic {
@@ -351,7 +351,6 @@ FOOTER
 	grid-template-areas: 
 		". . contact contact contact contact . ."
 		"copy copy copy . social social social social";
-	background-color: #202020;
 }
 
 .footer h2 {
@@ -363,6 +362,9 @@ FOOTER
 	grid-template-areas: 
 		"h-two h-two h-two h-two"
 		"form form form form";
+	background-color: #202020;
+	border-radius: 20px;
+	margin-bottom: 50px;
 }
 
 .form {
