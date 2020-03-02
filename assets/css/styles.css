@@ -4,9 +4,10 @@ COLORS
 
 #25ced1 -- bright light blue (links)
 #f4c803 -- yellow
-#00a6a6 -- muted light blue (logo 'j')
 #cc3399 -- purple
 #df2879 -- pink
+#270514 -- dark pink (outlines)
+
 /**************************************
 RESET
 ***************************************/
@@ -89,15 +90,34 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
 /**************************************
 GLOBAL
 ***************************************/
+
 html {
 	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	background-color: #000;
 	color: #fff;
+	position: relative;
 }
+
+main {
+	position: relative;
+}
+
+html:before {
+		background: url("../images/port-bg.png") center/cover no-repeat fixed;
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: .10;
+		z-index: -1;
+	}
 
 p {
 	font-family: 'Lato';
@@ -206,24 +226,31 @@ h1 {
 ABOUT ME
 ***************************************/
 
+.about-banner {
+	width: 100%;
+	border-top: 2px dashed #f4c803;
+	border-bottom: 2px dashed #f4c803;
+}
+
 .about {
 	grid-template-areas: 
 		". . . h-two h-two . . ."
-		"pic pic pic bio bio bio bio bio";
-	padding: 50px 0 200px;
+		"pic pic pic . bio bio bio .";
+	padding: 50px 0 120px;
 	position: relative;
+	border-bottom: 2px dashed #f4c803;
 }
 
 	.about:before {
 		content: '';
-		background: url("../images/mania.png") center/cover no-repeat;
+		background: url("../images/mania.png") center/cover no-repeat fixed;
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
-		opacity: .05;
-		background-attachment: fixed;
+		opacity: .15;
+		z-index: -1;
 	}
 
 h2 {
@@ -235,45 +262,25 @@ h2 {
 .pic {
 	grid-area: pic;
 	display: flex;
-	border: 2px solid #270514; 
-	border-radius: 20px;
 	opacity: .95;
 	margin-left: 50px;
+}
+
+.pic, .bio p, .other, .contact {
+	border: 2px solid #270514;
+	border-radius: 20px;
+	background-color: #101010;
 }
 
 .bio {
 	font-size: 1em;
 	grid-area: bio;
 	align-self: center;
-	color: #fff;
-	grid-template-areas:
-		". one one one one one one ."
-		". . two two two two two ."
-		". three three three three three . .";
 }
 
 	.bio p {
-		background-color: #101010;
-		border: 2px solid #270514;
 		padding: 10px;
-		border-radius: 20px;
 		z-index: 1;
-	}
-
-	.bio p:not(.three) {
-		margin-bottom: 30%;
-	}
-
-	.one {
-		grid-area: one;
-	}
-
-	.two {
-		grid-area: two;
-	}
-
-	.three {
-		grid-area: three;
 	}
 
 /**************************************
@@ -286,39 +293,45 @@ PORTFOLIO
 		"work work work work"
 		"skills skills skills skills"
 		". other other .";
-	margin: 100px 0;
+		padding-top: 50px;
+}
+
+.port-banner {
+	align-self: center;
+	grid-area: h-two;
 }
 
 /** Work **/
 
 .work {
 	grid-area: work;
+	border-top: 2px dashed #f4c803;
 }
 
 .example {
 	color: #fff;
-	padding: 150px 0;
+	padding: 250px 0;
 	position: relative;
 }
-	.example:nth-child(2):after, 
-	.example:nth-child(3):before, .example:nth-last-child(2):before, .example:last-child:before {
+	.example:first-child:before, 
+	.example:nth-child(2):before, .example:nth-last-child(2):before, .example:last-child:before {
 		content: '';
 		width: 100%;
 		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
-		opacity: .05;
+		opacity: .15;
 		z-index: -1;
 
 	}
 
-	.example:nth-child(2):after {
+	.example:first-child:before {
 		background: url("../images/splendorous-background.png") center/cover no-repeat fixed;
 	}
 
 
-	.example:nth-child(3):before {
+	.example:nth-child(2):before {
 		background: url("../images/chromatics-background.png") center/cover no-repeat fixed;
 
 	}
@@ -425,6 +438,8 @@ PORTFOLIO
 .other {
 	grid-area: other;
 	margin-bottom: 100px;
+	background-color: #101010;
+	padding: 10px 20px 20px;
 }
 
 /**************************************
@@ -438,23 +453,21 @@ FOOTER
 }
 
 .footer h2 {
-	margin-bottom: 20px;
+	margin: 20px 0;
 }
 
 .contact {
 	grid-area: contact;
 	grid-template-areas: 
-		"h-two h-two h-two h-two"
-		"form form form form";
-	background-color: #202020;
-	border-radius: 20px;
+		"h-two h-two h-two h-two h-two h-two h-two h-two"
+		". form form form form form form ."
+		"btn btn btn btn btn btn btn btn";
 	margin-bottom: 50px;
 }
 
 .form {
 	grid-area: form;
-	text-align: center;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
 }
 	.form input, .form textarea {
 		width: 75%;
@@ -463,6 +476,40 @@ FOOTER
 		max-width: 100%;
 		min-height: 48px;
 		max-height: 200px;
+	}
+
+.field input, .field textarea {
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.btn {
+	grid-area: btn;
+	background-color: #707070;
+	margin: 0 auto 30px;
+	padding: 2px 15px;
+	color: #f4c803;
+	text-shadow: 1px 1px #101010;
+	font-weight: 900;
+	font-size: 1.7em;
+	border: none;
+	border-radius: 20px;
+	box-shadow: 2px 3px #505050;
+}
+	.btn:active, .btn:focus {
+		outline: none;
+	}
+
+	.btn:hover {
+		background-color: #808080;
+		text-shadow: 2px 2px #101010;
+	}
+
+	.btn:active {
+		background-color: #505050;
+		color: #c29f02;
+		text-shadow: -1px -1px #101010;
+		box-shadow: 2px 3px #707070;
 	}
 
 .social {
