@@ -93,12 +93,15 @@ select {
 GLOBAL
 ***************************************/
 html {
-	font-family: 'Nunito', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	width: 100%;
 	background-color: #000;
 	color: #fff;
 }
 
+p {
+	font-family: 'Lato';
+}
 a {
 	text-decoration: none;
 	color: #25ced1;
@@ -119,13 +122,14 @@ ul li {
 	padding: 10px;
 }
 
-h1, h2 {
+h1, h2, .social h3 {
 	color: #f4da03;
+	text-shadow: 2px 1px #92154d;
 }
 
 h2 {
 	font-size: 3em;
-	margin: 25px auto;
+	margin: 50px auto;
 }
 
 h3 {
@@ -143,18 +147,6 @@ h4 {
 label {
 	display: block;
 }
-/**************************************
-HEADER
-***************************************/
-
-nav {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin: 0 auto;
-	font-size: 150%;
-}
-
 .grid-container, .grid-container-sm, .grid-container-lg {
 	display: grid;
 	grid-template-rows: auto;
@@ -168,6 +160,17 @@ nav {
 	grid-template-columns: repeat(8, 12.5%);
 }
 
+/**************************************
+HEADER
+***************************************/
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+	font-size: 150%;
+}
 
 .header {
 	grid-template-areas:
@@ -206,9 +209,22 @@ ABOUT ME
 .about {
 	grid-template-areas: 
 		". . . h-two h-two . . ."
-		". pic pic . . bio bio .";
+		"pic pic pic bio bio bio bio bio";
 	padding: 50px 0 200px;
+	position: relative;
 }
+
+	.about:before {
+		content: '';
+		background: url("../images/mania.png") center/cover no-repeat;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: .05;
+		background-attachment: fixed;
+	}
 
 h2 {
 	grid-area: h-two;
@@ -218,14 +234,46 @@ h2 {
 .pic {
 	grid-area: pic;
 	display: flex;
-	border-radius: 5px;
+	border: 2px solid #270514; 
+	border-radius: 20px;
+	opacity: .95;
+	margin-left: 50px;
 }
 
 .bio {
-	font-size: 1.25em;
+	font-size: 1em;
 	grid-area: bio;
 	align-self: center;
+	color: #fff;
+	grid-template-areas:
+		". one one one one one one ."
+		". . two two two two two ."
+		". three three three three three . .";
 }
+
+	.bio p {
+		background-color: #101010;
+		border: 2px solid #270514;
+		padding: 10px;
+		border-radius: 20px;
+		z-index: 1;
+	}
+
+	.bio p:not(.three) {
+		margin-bottom: 30%;
+	}
+
+	.one {
+		grid-area: one;
+	}
+
+	.two {
+		grid-area: two;
+	}
+
+	.three {
+		grid-area: three;
+	}
 
 /**************************************
 PORTFOLIO
@@ -388,7 +436,6 @@ FOOTER
 	.social h3 {
 		display: inline-block;
 		margin-bottom: 0;
-		color: #f4c803;
 	}
 
 	.social a {
@@ -402,9 +449,14 @@ FOOTER
 	border-radius: 100px;
 	width: 35px;
 }
+
 	a:last-child .icon {
 		padding: 2.955px 0;
 		background-color: #fff;
+	}
+
+	.icon:hover, .icon:focus, .icon:active {
+		opacity: .5;
 	}
 
 .copy {
