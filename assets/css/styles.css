@@ -229,6 +229,7 @@ ABOUT ME
 h2 {
 	grid-area: h-two;
 	text-align: center;
+	margin-bottom: 100px;
 }
 
 .pic {
@@ -285,6 +286,7 @@ PORTFOLIO
 		"work work work work"
 		"skills skills skills skills"
 		". other other .";
+	margin: 100px 0;
 }
 
 /** Work **/
@@ -295,11 +297,45 @@ PORTFOLIO
 
 .example {
 	color: #fff;
-	margin: 50px auto;
+	padding: 150px 0;
+	position: relative;
 }
+	.example:nth-child(2):after, 
+	.example:nth-child(3):before, .example:nth-last-child(2):before, .example:last-child:before {
+		content: '';
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: .05;
+		z-index: -1;
+
+	}
+
+	.example:nth-child(2):after {
+		background: url("../images/splendorous-background.png") center/cover no-repeat fixed;
+	}
+
+
+	.example:nth-child(3):before {
+		background: url("../images/chromatics-background.png") center/cover no-repeat fixed;
+
+	}
+	.example:nth-last-child(2):before {
+		background: url("../images/queen-background.png") center/cover no-repeat fixed;
+
+	}
+	.example:last-child:before {
+		background: url("../images/bpa-background.png") center/cover no-repeat fixed;
+	}
+
+	.example:last-child {
+		margin-bottom: 100px;
+	}
 	
 	.example:not(.e-one) {
-		margin: 100px auto;
+		padding: 100px auto;
 	}
 
 	.e-left {
