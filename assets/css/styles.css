@@ -197,9 +197,8 @@ label {
 
 .box {
 	justify-self: center;
-	min-width: 40vw;
+	min-width: 60vw;
 }
-
 /**************************************
 HEADER
 ***************************************/
@@ -574,6 +573,13 @@ FOOTER
 /**************************************
 MEDIA QUERIES
 ***************************************/
+@media only screen and (min-width: 1300px) {
+	.box {
+		min-width: 40vw;
+		max-width: 40vw;
+	}
+}
+
 @media only screen and (max-width: 845px) {
 	.fa-10x {
 		font-size: 6em !important;
@@ -610,24 +616,6 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 630px) {
 
-	.s-name {
-		font-size: .8em;
-	}
-
-	.fa-10x {
-		font-size: 3em !important;
-	}
-
-	.sql {
-		max-width: 30px;
-		max-height: 35px;
-	}
-
-}
-
-
-@media only screen and (max-width: 512px) {
-
 	h1, h2 {
 		font-size: 1.7em;
 	}
@@ -652,6 +640,7 @@ MEDIA QUERIES
 	}
 
 	.about {
+		padding: 200px 0;
 	grid-template-areas: 
 		". . . h-two h-two . . ."
 		"pic pic pic pic pic pic pic pic"
@@ -660,19 +649,19 @@ MEDIA QUERIES
 
 	.pic {
 		margin: 0;
-		border-radius: 20px 20px 0 0;
-		border-bottom: none;
+		border-radius: 0;
+		border: none;
 	}
 
 	.bio p {
-		border-radius: 0 0 20px 20px;
-		border-top: none;
+		border-radius: 0;
+		border: none;
 	}
 
 	.e-left, .e-right {
 	grid-template-areas: 
 		" . blurb blurb blurb blurb blurb blurb ."
-		" . e-link e-link e-link e-link e-link e-link ."
+		" . e-link e-link e-link e-link e-link e-link .";
 	}
 
 	.blurb {
