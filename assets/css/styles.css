@@ -418,6 +418,7 @@ PORTFOLIO
 	grid-template-areas: 
 		". . . h-three h-three . . ."
 		"skill skill skill skill skill skill skill skill";
+		justify-content: space-evenly;
 	margin-bottom: 100px;
 }
 
@@ -540,6 +541,7 @@ FOOTER
 	.social h3 {
 		display: inline-block;
 		margin-bottom: 0;
+		line-height: 1.1em;
 	}
 
 	.social a {
@@ -593,7 +595,7 @@ MEDIA QUERIES
 		grid-template-areas: 
 			"contact contact contact contact contact contact contact contact"
 			"social social social social social social social social"
-			". copy copy copy copy copy copy .";
+			"copy copy copy copy copy copy copy copy";
 	}
 
 	.copy {
@@ -611,6 +613,7 @@ MEDIA QUERIES
 	.s-name {
 		font-size: .8em;
 	}
+
 	.fa-10x {
 		font-size: 3em !important;
 	}
@@ -674,6 +677,27 @@ MEDIA QUERIES
 
 	.blurb {
 		margin-bottom: 50px;
+	}
+
+	.s-name {
+		font-size: .6em;
+	}
+
+	.s-item {
+		margin: 0 !important;
+	}
+
+	.fa-10x {
+		font-size: 1.8em !important;
+	}
+
+	.sql {
+		max-width: 20px;
+		max-height: 25px;
+	}
+
+	.social a {
+		margin-left: 10px;
 	}
 
 }
