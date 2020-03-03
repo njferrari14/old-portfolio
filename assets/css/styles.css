@@ -103,21 +103,23 @@ html {
 	position: relative;
 }
 
-main {
-	position: relative;
-}
-
-html:before {
-		background: url("../images/port-bg.png") center/cover no-repeat fixed;
+	html:before {
+		background: url("../images/port-bg.png") left top/cover no-repeat fixed;
 		content: '';
-		width: 100%;
-		height: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		max-height: 100%;
+		min-height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		opacity: .10;
 		z-index: -1;
 	}
+
+body {
+	width: 100%;
+}
 
 p {
 	font-family: 'Lato';
@@ -180,6 +182,11 @@ label {
 	grid-template-columns: repeat(8, 12.5%);
 }
 
+.box {
+	justify-self: center;
+	min-width: 40vw;
+}
+
 /**************************************
 HEADER
 ***************************************/
@@ -195,8 +202,8 @@ nav {
 .header {
 	grid-template-areas:
 		". logo logo ."
-		" . h-one h-one ."
-		". nav nav .";
+		"h-one h-one h-one h-one"
+		"nav nav nav nav";
 	margin: 100px auto 400px;
 }
 
@@ -230,6 +237,7 @@ ABOUT ME
 	width: 100%;
 	border-top: 2px dashed #f4c803;
 	border-bottom: 2px dashed #f4c803;
+	padding-top: 50px;
 }
 
 .about {
@@ -243,7 +251,7 @@ ABOUT ME
 
 	.about:before {
 		content: '';
-		background: url("../images/mania.png") center/cover no-repeat fixed;
+		background: url("../images/mania.png") left top/cover no-repeat fixed;
 		width: 100%;
 		height: 100%;
 		position: absolute;
@@ -433,7 +441,7 @@ PORTFOLIO
 	color: #cc3399;
 }
 
-/* Other Projects */
+/** Other Projects **/
 
 .other {
 	grid-area: other;
@@ -546,4 +554,113 @@ FOOTER
 	grid-area: copy;
 	align-self: end;
 	padding: 10px;
+}
+
+/**************************************
+MEDIA QUERIES
+***************************************/
+@media only screen and (max-width: 845px) {
+	.fa-10x {
+		font-size: 6em !important;
+	}
+
+	li:last-child .s-name {
+		margin-bottom: 25px;
+	}
+
+	.sql {
+		max-width: 60px;
+		max-height: 65px;
+	}
+}
+
+@media only screen and (max-width: 812px) {
+
+	.footer {
+		grid-template-areas: 
+			"contact contact contact contact contact contact contact contact"
+			"social social social social social social social social"
+			". copy copy copy copy copy copy .";
+	}
+
+	.copy {
+		justify-self: center;
+	}
+
+	.box {
+		min-width: 60vw;
+	}
+
+}
+
+@media only screen and (max-width: 630px) {
+
+	.s-name {
+		font-size: .8em;
+	}
+	.fa-10x {
+		font-size: 3em !important;
+	}
+
+	.sql {
+		max-width: 30px;
+		max-height: 35px;
+	}
+
+}
+
+
+@media only screen and (max-width: 512px) {
+
+	h1, h2 {
+		font-size: 1.7em;
+	}
+
+	.header {
+		margin-bottom: 200px;
+	}
+
+	.logo {
+		min-width: 100px;
+		max-width: 100px;
+		max-height: 185px;
+	}
+
+	.nav-links {
+		font-size: .8em;
+	}
+
+	.box {
+		min-width: 90vw;
+		max-width: 95vw;
+	}
+
+	.about {
+	grid-template-areas: 
+		". . . h-two h-two . . ."
+		"pic pic pic pic pic pic pic pic"
+		"bio bio bio bio bio bio bio bio";
+	}
+
+	.pic {
+		margin: 0;
+		border-radius: 20px 20px 0 0;
+		border-bottom: none;
+	}
+
+	.bio p {
+		border-radius: 0 0 20px 20px;
+		border-top: none;
+	}
+
+	.e-left, .e-right {
+	grid-template-areas: 
+		" . blurb blurb blurb blurb blurb blurb ."
+		" . e-link e-link e-link e-link e-link e-link ."
+	}
+
+	.blurb {
+		margin-bottom: 50px;
+	}
+
 }
