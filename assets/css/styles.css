@@ -117,7 +117,7 @@ html {
 }
 
 	html:before {
-		background: url("../images/port-bg.png") left top/cover no-repeat fixed;
+		background: url("../images/bricks.jpg") left top/cover no-repeat fixed;
 		content: '';
 		max-width: 100%;
 		min-width: 100%;
@@ -348,20 +348,20 @@ PORTFOLIO
 	}
 
 	.example:first-child:before {
-		background: url("../images/splendorous-background.png") center/cover no-repeat fixed;
+		background: url("../images/splendorous-bg.png") center/cover no-repeat fixed;
 	}
 
 
 	.example:nth-child(2):before {
-		background: url("../images/chromatics-background.png") center/cover no-repeat fixed;
+		background: url("../images/chromatics-bg.png") center/cover no-repeat fixed;
 
 	}
 	.example:nth-last-child(2):before {
-		background: url("../images/queen-background.png") center/cover no-repeat fixed;
+		background: url("../images/queen-bg.png") center/cover no-repeat fixed;
 
 	}
 	.example:last-child:before {
-		background: url("../images/bpa-background.png") center/cover no-repeat fixed;
+		background: url("../images/bpa-bg.png") center/cover no-repeat fixed;
 	}
 
 	.example:last-child {
