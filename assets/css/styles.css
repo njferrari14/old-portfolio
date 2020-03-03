@@ -1,4 +1,17 @@
 /**************************************
+TABLE OF CONTENTS
+***************************************
+
+1. Color Template
+2. CSS Reset
+3. Global
+4. Header
+5. About Me
+6. Portfolio
+7. Footer
+8. Media Queries
+
+***************************************
 COLORS
 ***************************************
 
@@ -8,7 +21,7 @@ COLORS
 #df2879 -- pink
 #270514 -- dark pink (outlines)
 
-/**************************************
+***************************************
 RESET
 ***************************************/
 
@@ -244,7 +257,7 @@ ABOUT ME
 	grid-template-areas: 
 		". . . h-two h-two . . ."
 		"pic pic pic . bio bio bio .";
-	padding: 50px 0 120px;
+	padding: 120px 0;
 	position: relative;
 	border-bottom: 2px dashed #f4c803;
 }
