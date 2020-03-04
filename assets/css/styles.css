@@ -132,6 +132,7 @@ html {
 
 body {
 	width: 100%;
+	margin: 0 auto;
 }
 
 p {
@@ -626,7 +627,7 @@ MEDIA QUERIES
 	}
 
 	.header {
-		margin-bottom: 200px;
+		margin-bottom: 300px;
 	}
 
 	.logo {
