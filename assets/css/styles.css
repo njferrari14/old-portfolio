@@ -107,11 +107,6 @@ select {
 /**************************************
 GLOBAL
 ***************************************/
-:root {
-	--height-body: 100%;
-	--height-about: 100%;
-	--height-element: 100%;
-}
 
 html {
 	font-family: 'Open Sans', sans-serif;
@@ -123,6 +118,7 @@ html {
 
 body {
 	width: 100%;
+	height: 100%;
 	margin: 0 auto;
 }
 
@@ -134,12 +130,13 @@ body {
     	content: '';
 		max-width: 100%;
 		min-width: 100%;
-		max-height: var(--height-body);
-		min-height: var(--height-body);
+		max-height: 100%;
+		min-height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		opacity: .10;
+		will-change: transform;
 		z-index: -1;
 	}
 
@@ -283,11 +280,12 @@ ABOUT ME
     	-moz-background-size: cover;
     	-o-background-size: cover;
 		width: 100%;
-		height: var(--height-about);
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		opacity: .15;
+		will-change: transform;
 		z-index: -1;
 	}
 
@@ -349,6 +347,7 @@ PORTFOLIO
 .example {
 	color: #fff;
 	padding: 250px 0;
+	height: 100%;
 	position: relative;
 }
 	.example:before {
@@ -357,11 +356,12 @@ PORTFOLIO
     	-o-background-size: cover;
     	content: '';
 		width: 100%;
-		height: var(--height-element);
+		height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		opacity: .15;
+		will-change: transform;
 		z-index: -1;
 	}
 
@@ -490,6 +490,7 @@ FOOTER
 	grid-template-areas: 
 		". . contact contact contact contact . ."
 		"copy copy copy . social social social social";
+		padding-bottom: 5px;
 }
 
 .footer h2 {
@@ -521,6 +522,7 @@ FOOTER
 .field input, .field textarea {
 	width: 100%;
 	margin-bottom: 5px;
+	padding-left: 5px;
 }
 
 .btn {
@@ -586,7 +588,7 @@ FOOTER
 .copy {
 	grid-area: copy;
 	align-self: end;
-	padding: 10px;
+	padding: 0 10px;
 }
 
 /**************************************

@@ -6,7 +6,7 @@ let examples = document.querySelectorAll('.example');
 
 let bHeight = body.offsetHeight;
 let aHeight = about.offsetHeight;
-let eHeight = examples[0].offsetHeight;
+let eHeight = examples[3].offsetHeight;
 
 root.style.setProperty('--height-body', bHeight + 'px');
 root.style.setProperty('--height-about', aHeight + 'px');
