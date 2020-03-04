@@ -182,6 +182,11 @@ h4 {
 label {
 	display: block;
 }
+
+button:hover {
+	cursor: pointer;
+}
+
 .grid-container, .grid-container-sm, .grid-container-lg {
 	display: grid;
 	grid-template-rows: auto;
