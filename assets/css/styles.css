@@ -675,15 +675,16 @@ MEDIA QUERIES
 	}
 
 	.s-name {
-		font-size: .6em;
+		font-size: .8em;
 	}
 
 	.s-item {
 		margin: 0 !important;
+		text-align: center;
 	}
 
 	.fa-10x {
-		font-size: 1.8em !important;
+		font-size: 2em !important;
 	}
 
 	.sql {
