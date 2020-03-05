@@ -140,6 +140,37 @@ body {
 		z-index: -1;
 	}
 
+.pg-body {
+	grid-template-areas: 
+		"logo logo h-one h-one h-one h-one . ."
+		"logo logo list list list list . .";
+		margin-bottom: 200px;
+}
+
+.pg-h {
+	grid-area: h-one;
+	margin: 50px auto;
+}
+
+.logo-sm {
+	grid-area: logo;
+	width: 150px;
+	height: 277px;
+	align-self: start;
+	justify-self: center;
+}
+
+.pg-container {
+	grid-area: list;
+	padding: 20px;
+}
+
+dd {
+	border-bottom: 1px dashed #f4c803;
+	margin: 5px 0 10px;
+	padding-bottom: 5px;
+}
+
 p {
 	font-family: 'Lato';
 }
@@ -302,7 +333,7 @@ h2 {
 	margin-left: 50px;
 }
 
-.pic, .bio p, .other, .contact {
+.pic, .bio p, .other, .contact, .pg-container {
 	border: 2px solid #270514;
 	border-radius: 20px;
 	background-color: #101010;

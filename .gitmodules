@@ -1,0 +1,9 @@
+[submodule "assets/projects/etch-a-sketch"]
+	path = assets/projects/etch-a-sketch
+	url = https://github.com/njferrari14/etch-a-sketch.git
+[submodule "assets/projects/rock-paper-scissors"]
+	path = assets/projects/rock-paper-scissors
+	url = https://github.com/njferrari14/rock-paper-scissors.git
+[submodule "assets/projects/google-homepage"]
+	path = assets/projects/google-homepage
+	url = https://github.com/njferrari14/google-homepage.git
