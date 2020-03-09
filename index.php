@@ -1,7 +1,7 @@
-<?php require 'assets/includes/header.html'; ?>
+<?php require 'assets/includes/header.php'; ?>
 
 <body>
-<? require 'assets/includes/menu.html'; ?>
+<? require 'assets/includes/menu.php'; ?>
 	<!-- "Below the fold"
     ========================================================= -->
 	<main>
@@ -112,7 +112,7 @@
 
 		</div>
 
-<?php require 'assets/includes/footer.html'; ?>
+<?php require 'assets/includes/footer.php'; ?>
 
 	</main>
 

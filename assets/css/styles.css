@@ -532,13 +532,15 @@ FOOTER
 	grid-area: contact;
 	grid-template-areas: 
 		"h-two h-two h-two h-two h-two h-two h-two h-two"
-		". form form form form form form ."
-		"btn btn btn btn btn btn btn btn";
+		". form form form form form form .";
 	margin-bottom: 50px;
 }
 
 .form {
 	grid-area: form;
+	grid-template-areas: 
+		"field field field field"
+		". btn btn .";
 	margin-bottom: 20px;
 }
 	.form input, .form textarea {
@@ -556,11 +558,15 @@ FOOTER
 	padding-left: 5px;
 }
 
+.fields {
+	grid-area: field;
+}
+
 .btn {
+	text-align: center;
 	grid-area: btn;
 	background-color: #707070;
 	margin: 0 auto 30px;
-	padding: 2px 15px;
 	color: #f4c803;
 	text-shadow: 1px 1px #101010;
 	font-weight: 900;

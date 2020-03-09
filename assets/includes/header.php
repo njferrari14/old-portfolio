@@ -1,4 +1,9 @@
-<?php include 'title.php'; ?>
+<?php 
+
+require 'assets/includes/form_insert.php';
+include 'assets/includes/title.php';
+
+?>
 
 <!doctype html>
 <html lang="en">
