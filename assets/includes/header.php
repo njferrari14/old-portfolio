@@ -1,29 +1,27 @@
-<?php
-// require_once './connection.php';
-// require_once './utility_funcs.php';
-require_once './includes/title.php';
-?>
-<!DOCTYPE HTML>
-<html>
+<?php include 'title.php'; ?>
+
+<!doctype html>
+<html lang="en">
 <head>
+
+	<!-- Basic Page Needs
+    ========================================================= -->
+	<title>njferrari <?= $title ?? '' ?></title>
 	<meta charset="utf-8">
-	<title>NJFerrari <?= $title ?? '' ?></title>
-	<link href="css/styles.css" rel="stylsheet" type="text/css">
+    <meta name="description" content="NJ Ferrari Portfolio">
+    <meta name="author" content="Nicholas J Ferrari">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!--icons-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Styles & Scripts
+    ========================================================= -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+	
+	<!-- Icons
+    ========================================================= -->
+	<script src="https://kit.fontawesome.com/c8ad857e05.js" crossorigin="anonymous"></script>
+	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon.ico">
+	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon.ico">
+
 </head>
-<body>
-
-<header>
-	<h1>Nicholas Ferrari</h1>
-</header>
-
-<nav>
-	<ul>
-		<li><a href="index.php">Home</a></li>
-		<li><a href="about.php">About</a></li>
-		<li><a href="work.php">Work</a></li>
-		<li><a href="contact.php">Contact</a></li>
-	</ul>
-</nav>
