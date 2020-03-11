@@ -5,7 +5,7 @@
 			<div class="field">
 				<label for="name">Name:
 					<?php if(in_array('name', $missing)) { ?>
-						<span class="warning">Please enter your name</span>
+						<span class="warning">*Please enter your name</span>
 					<?php } ?>
 				</label>
 				<input type="text" id="name" name="name" placeholder="Armin Tamzarian"
@@ -16,7 +16,7 @@
 			<div class="field">
 				<label for="email">Email:
 					<?php if(in_array('email', $missing)) { ?>
-						<span class="warning">Please enter your email</span>
+						<span class="warning">*Please enter your email</span>
 					<?php } ?>
 				</label>
 				<input type="text" id="email" name="email" placeholder="seymour@steamedhams.com"
@@ -27,13 +27,13 @@
 			<div class="field">
 				<label for="comments">Comments:
 					<?php if(in_array('comments', $missing)) { ?>
-						<span class="warning">Please enter a message</span>
+						<span class="warning">*Please enter a message</span>
 					<?php } ?>
 				</label>
-				<textarea type="text" id="comments" name="comments" placeholder="Type your message here...">
+				<textarea id="comments" name="comments" placeholder="Type your message here..."
 					<?php if ($missing || $errors) {
 						echo 'value="' . htmlentities($comments) . '"';
-					} ?></textarea>
+					} ?>></textarea>
 			</div>
 		</div>
 		<input class="btn" type="submit" name="submit" value="Contact">

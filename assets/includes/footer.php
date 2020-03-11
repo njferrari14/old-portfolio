@@ -14,3 +14,6 @@
 	<p class="copy">&copy; Copyright Nicholas Ferrari 2020</p>
 
 </footer>
+
+</body>
+</html>

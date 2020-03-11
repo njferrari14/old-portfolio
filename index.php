@@ -106,15 +106,12 @@
 			</div>
 
 			<div class="other box">
-				<h3><a href="playground.html">Code Playground >>></a></h3>
+				<h3><a href="playground.php">Code Playground >>></a></h3>
 				<p>I'm currently self-enrolled in <a href="https://www.theodinproject.com/">The Odin Project</a>, and this is where I will be uploading all my projects from that course as well as anything else I build.</p>
 			</div>
 
 		</div>
 
-<?php require 'assets/includes/footer.php'; ?>
-
 	</main>
 
-</body>
-</html>
+<?php require 'assets/includes/footer.php'; ?>

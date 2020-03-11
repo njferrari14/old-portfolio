@@ -9,7 +9,9 @@ TABLE OF CONTENTS
 5. About Me
 6. Portfolio
 7. Footer
-8. Media Queries
+8. Code Playground
+9. Thanks
+10. Media Queries
 
 ***************************************
 COLORS
@@ -140,37 +142,6 @@ body {
 		z-index: -1;
 	}
 
-.pg-body {
-	grid-template-areas: 
-		"logo logo h-one h-one h-one h-one . ."
-		"logo logo list list list list . .";
-		margin-bottom: 200px;
-}
-
-.pg-h {
-	grid-area: h-one;
-	margin: 50px auto;
-}
-
-.logo-sm {
-	grid-area: logo;
-	width: 150px;
-	height: 277px;
-	align-self: start;
-	justify-self: center;
-}
-
-.pg-container {
-	grid-area: list;
-	padding: 20px;
-}
-
-dd {
-	border-bottom: 1px dashed #f4c803;
-	margin: 5px 0 10px;
-	padding-bottom: 5px;
-}
-
 p {
 	font-family: 'Lato';
 }
@@ -241,6 +212,11 @@ button:hover {
 .box {
 	justify-self: center;
 	min-width: 60vw;
+}
+
+.warning {
+	color: red;
+	text-align: right;
 }
 /**************************************
 HEADER
@@ -629,8 +605,61 @@ FOOTER
 }
 
 /**************************************
+CODE PLAYGROUND
+***************************************/
+
+.pg-body {
+	grid-template-areas: 
+		"logo logo h-one h-one h-one h-one . ."
+		"logo logo list list list list . .";
+		margin-bottom: 200px;
+}
+
+.pg-h, .ty-h {
+	grid-area: h-one;
+	margin: 50px auto;
+}
+
+.logo-sm {
+	grid-area: logo;
+	width: 150px;
+	height: 277px;
+	align-self: start;
+	justify-self: center;
+}
+
+.pg-container {
+	grid-area: list;
+	padding: 20px;
+}
+
+dd {
+	border-bottom: 1px dashed #f4c803;
+	margin: 5px 0 10px;
+	padding-bottom: 5px;
+}
+
+/**************************************
+THANKS
+***************************************/
+
+.ty-body {
+	grid-template-areas: 
+		"logo logo h-one h-one h-one h-one . ."
+		"logo logo h-two h-two h-two h-two . .";
+		margin-bottom: 200px;
+}
+
+.ty-p {
+	grid-area: h-two;
+	justify-self: center;
+	font-size: 1.2em;
+	color: #25ced1;
+}
+/**************************************
 MEDIA QUERIES
 ***************************************/
+
 @media only screen and (min-width: 1300px) {
 	.box {
 		min-width: 40vw;

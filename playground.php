@@ -1,4 +1,4 @@
-<?php require 'header.html' ?>
+<?php require 'assets/includes/header.php' ?>
 
 <body>
 
@@ -21,7 +21,4 @@
 
     </main>
 
-<?php require 'footer.php'; ?>
-
-</body>
-</html>
+<?php require 'assets/includes/footer.php'; ?>
