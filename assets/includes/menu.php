@@ -8,7 +8,7 @@
         <a href="index.php#about" title="About" class="nav-links a">About</a>
         <div class="dropdown">
         	<button class="dropBtn nav-links">Portfolio
-        		<i class="icon fa fa-caret-down"></i>
+        		<i class="arrow fa fa-caret-down"></i>
         	</button>
         	<div class="dropdown-content">
         		<a href="index.php#port" title="work" class="nav-links p">Work</a>

@@ -226,8 +226,9 @@ NAVIGATION
 
 nav {
 	margin: 0 auto;
-	background-color: #000;
+	background-color: #101010;
 	font-size: 150%;
+	border-bottom: 2px solid #270514;
 	grid-area: nav;
 	position: sticky;
 	position: -webkit-sticky;
@@ -253,10 +254,6 @@ nav {
 		color: #df2879;
 		outline: none;
 	}
-
-.icon {
-
-}
 
 .dropBtn {
 	border: none;
@@ -296,6 +293,17 @@ nav {
 .dropdown-content a:not(:last-child) {
 	border-bottom: 2px dashed #f4c803;
 }
+
+.arrow {
+	padding-left: 4px;
+	font-size: .8em;
+	transform: rotate(-90deg);
+	transition: transform .2s;
+}
+
+	.dropdown:hover .arrow, .dropdown:focus-within .arrow {
+		transform: rotate(0);
+	}
 
 /**************************************
 HEADER
