@@ -4,14 +4,15 @@ TABLE OF CONTENTS
 
 1. Color Template
 2. CSS Reset
-3. Global
-4. Header
-5. About Me
-6. Portfolio
-7. Footer
-8. Code Playground
-9. Thanks
-10. Media Queries
+3. Navigation
+4. Global
+5. Header
+6. About Me
+7. Portfolio
+8. Footer
+9. Code Playground
+10. Thanks
+11. Media Queries
 
 ***************************************
 COLORS
@@ -218,30 +219,10 @@ button:hover {
 	color: red;
 	text-align: right;
 }
+
 /**************************************
-HEADER
+NAVIGATION
 ***************************************/
-
-.header {
-	grid-template-areas:
-		". logo logo ."
-		"h-one h-one h-one h-one"
-		"nav nav nav nav";
-	margin: 100px auto 500px;
-}
-
-.logo {
-	grid-area: logo;
-	min-width: 300px;
-	margin: 0 auto 50px;
-}
-
-h1 {
-	grid-area: h-one;
-	text-align: center;
-	font-size: 3em;
-}
-
 
 nav {
 	margin: 0 auto;
@@ -314,6 +295,30 @@ nav {
 
 .dropdown-content a:not(:last-child) {
 	border-bottom: 2px dashed #f4c803;
+}
+
+/**************************************
+HEADER
+***************************************/
+
+.header {
+	grid-template-areas:
+		". logo logo ."
+		"h-one h-one h-one h-one"
+		"nav nav nav nav";
+	margin: 100px auto 500px;
+}
+
+.logo {
+	grid-area: logo;
+	min-width: 300px;
+	margin: 0 auto 50px;
+}
+
+h1 {
+	grid-area: h-one;
+	text-align: center;
+	font-size: 3em;
 }
 
 /**************************************
