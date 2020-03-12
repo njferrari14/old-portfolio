@@ -1,6 +1,7 @@
 <?php require 'assets/includes/header.php' ?>
 
 <body>
+<? require 'assets/includes/menu.php'; ?>
 
     <main class="pg-body grid-container-lg">
 
@@ -9,6 +10,7 @@
         <h1 class="pg-h">Code Playground</h1>
 
         <div class="pg-container">
+            <h3>Projects</h3>
             <dt>
                 <dt><a href="assets/projects/google-homepage/index.html">Google Homepage >>></a></dt>
                 <dd><p>This was my first project in The Odin Project. I was tasked with coding a page that looked like the Google homepage to showcase my HTML/CSS skills</p></dd>

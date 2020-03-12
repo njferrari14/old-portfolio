@@ -10,7 +10,7 @@ include 'assets/includes/title.php';
 
 	<!-- Basic Page Needs
     ========================================================= -->
-	<title>njferrari-- <?= $title ?? '' ?></title>
+	<title>njferrari - <?= $title ?? '' ?></title>
 	<meta charset="utf-8">
     <meta name="description" content="NJ Ferrari Portfolio">
     <meta name="author" content="Nicholas J Ferrari">

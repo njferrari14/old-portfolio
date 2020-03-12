@@ -1,20 +1,21 @@
 
-<!-- "Above the fold" content
+<!-- Navigation
 ========================================================= -->
-<div id="header" class="grid-container header">
 
-	<img src="assets/images/logo_dark_bg.png" class="logo" alt="logo" id="logo" width="300" height="554">
-	<h1>Nicholas J Ferrari</h1>
-
-	<!-- Navigation
-	========================================================= -->
-	<nav class="main-nav">
-		<ul>
-			<li><a class="nav-links" href="#about">About Me</a></li>
-			<li><a class="nav-links" href="#port">Portfolio</a></li>
-			<li><a class="nav-links" href="#contact">Contact</a></li>
-			<div class="line"></div>
-		</ul>
-	</nav>
-
-</div>
+<nav id="burgerMenu">
+  <div class="bm-container" id="collapsibleNavbar">
+        <a href="index.php#home" title="Home" class="nav-links h">Home</a>
+        <a href="index.php#about" title="About" class="nav-links a">About</a>
+        <div class="dropdown">
+        	<button class="dropBtn nav-links">Portfolio
+        		<i class="icon fa fa-caret-down"></i>
+        	</button>
+        	<div class="dropdown-content">
+        		<a href="index.php#port" title="work" class="nav-links p">Work</a>
+        		<a href="index.php#skills" title="skills" class="nav-links p">Skills</a>
+        		<a href="playground.php" title="code playground" class="nav-links p">Code Playground</a>
+        	</div>
+        </div>
+        <a href="#contact" title="Contact" class="nav-links c">Contact</a>
+  </div>
+</nav>

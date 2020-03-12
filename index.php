@@ -1,11 +1,20 @@
 <?php require 'assets/includes/header.php'; ?>
 
-<body>
+<body id="home">
+
+<!-- "Above the fold" content
+========================================================= -->
 <? require 'assets/includes/menu.php'; ?>
+
+<div id="header" class="grid-container header">
+
+	<img src="assets/images/logo_dark_bg.png" class="logo" alt="logo" id="logo" width="300" height="554">
+	<h1>Nicholas J Ferrari</h1>
+
+</div>
 	<!-- "Below the fold"
     ========================================================= -->
 	<main>
-
 
 		<div id="about" class="about-banner">
 			<h2>About Me</h2>
@@ -94,7 +103,7 @@
 					</div>
 			</div>
 
-			<div class="skills grid-container-lg">
+			<div id="skills" class="skills grid-container-lg">
 				<h3 class="h-three">Skills</h3>
 				<ul class="skill-list">
 					<li class="s-item i-one"><h4 class="s-name">HTML5</h4><i class="fab fa-html5 fa-10x"></i></li>
