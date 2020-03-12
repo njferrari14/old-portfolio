@@ -2,8 +2,8 @@
 <!-- Navigation
 ========================================================= -->
 
-<nav id="burgerMenu">
-  <div class="bm-container" id="collapsibleNavbar">
+<nav>
+  <div class="nav-container" id="collapsibleNavbar">
         <a href="index.php#home" title="Home" class="nav-links h">Home</a>
         <a href="index.php#about" title="About" class="nav-links a">About</a>
         <div class="dropdown">

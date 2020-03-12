@@ -255,7 +255,7 @@ nav {
 	text-align: center;
 }
 
-.bm-container {
+.nav-container {
 	overflow: hidden;
 	display: flex;
 	justify-content: space-around;
@@ -277,7 +277,7 @@ nav {
 
 }
 
-.burgerBtn, .dropBtn {
+.dropBtn {
 	border: none;
 	background-color: rgb(0,0,0,0.0);
 	color: #25ced1;
