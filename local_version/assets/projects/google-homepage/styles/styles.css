@@ -1,0 +1,137 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*********end of reset********/
+
+html, body {
+    height: 100%;
+    font-family: arial, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+nav {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+li {
+    display: inline-block;
+    padding: 6px;
+}
+footer {
+    margin-top: auto;
+    background: #f2f2f2;
+}
+form {
+    text-align: center;
+}
+button {
+    padding: 10px 20px;
+    background: #f2f2f2;
+    color: #333;
+    border: none;
+}
+button:nth-child(2) {
+    margin-left: 10px;
+}
+.content {
+    flex: 1 0 auto;
+}
+.logo {
+    margin: 0 auto;
+    width: 550px;
+    height: 150px;
+    background-image: url(../images/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+.squares {
+    margin-top: 5px;
+    width: 5px;
+    height: 5px;
+    background: url(../images/menu-squares.png);
+    background-size: contain;
+}
+.r-link {
+    float: right;
+}
+.l-link {
+    float: left;
+}
+.m-left {
+    margin-left: 400px;
+}
+.n {
+    background: darkblue;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 7px;
+}
+.middle {
+    margin-top: 150px;
+}
+.buttons {
+    margin-top: 30px;
+}
+.buttons:nth-child(2) {
+}
+.foot-link {
+    padding: 15px;
+}

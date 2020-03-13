@@ -1,55 +1,20 @@
-<!doctype html>
-<html lang="en">
-<head>
+<?php require 'assets/includes/header.php'; ?>
 
-	<!-- Basic Page Needs
-    ========================================================= -->
-	<title>njferrari</title>
-	<meta charset="utf-8">
-    <meta name="description" content="NJ Ferrari Portfolio">
-    <meta name="author" content="Nicholas J Ferrari">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body id="home">
 
-    <!-- Styles & Scripts
-    ========================================================= -->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
-	
-	<!-- Icons
-    ========================================================= -->
-	<script src="https://kit.fontawesome.com/c8ad857e05.js" crossorigin="anonymous"></script>
-	<link rel="apple-touch-icon" sizes="180x180" href="assets/images/icons/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="assets/images/icons/favicon.ico">
-	<link rel="icon" type="image/png" sizes="16x16" href="assets/images/icons/favicon.ico">
+<!-- "Above the fold" content
+========================================================= -->
+<? require 'assets/includes/menu.php'; ?>
 
-</head>
+<div id="header" class="grid-container header">
 
-<body>
+	<img src="assets/images/logo_dark_bg.png" class="logo" alt="logo" id="logo" width="300" height="554">
+	<h1>Nicholas J Ferrari</h1>
 
-	<!-- "Above the fold" content
-    ========================================================= -->
-	<div id="header" class="grid-container header">
-
-		<img src="assets/images/logo_dark_bg.png" class="logo" alt="logo" id="logo" width="300" height="554">
-		<h1>Nicholas J Ferrari</h1>
-
-		<!-- Navigation
-	    ========================================================= -->
-		<nav class="main-nav">
-			<ul>
-				<li><a class="nav-links" href="#about">About Me</a></li>
-				<li><a class="nav-links" href="#port">Portfolio</a></li>
-				<li><a class="nav-links" href="#contact">Contact</a></li>
-				<div class="line"></div>
-			</ul>
-		</nav>
-
-	</div>
-
+</div>
 	<!-- "Below the fold"
     ========================================================= -->
 	<main>
-
 
 		<div id="about" class="about-banner">
 			<h2>About Me</h2>
@@ -138,7 +103,7 @@
 					</div>
 			</div>
 
-			<div class="skills grid-container-lg">
+			<div id="skills" class="skills grid-container-lg">
 				<h3 class="h-three">Skills</h3>
 				<ul class="skill-list">
 					<li class="s-item i-one"><h4 class="s-name">HTML5</h4><i class="fab fa-html5 fa-10x"></i></li>
@@ -150,47 +115,12 @@
 			</div>
 
 			<div class="other box">
-				<h3><a href="playground.html">Code Playground >>></a></h3>
+				<h3><a href="playground.php">Code Playground >>></a></h3>
 				<p>I'm currently self-enrolled in <a href="https://www.theodinproject.com/">The Odin Project</a>, and this is where I will be uploading all my projects from that course as well as anything else I build.</p>
 			</div>
 
 		</div>
 
-		<footer class="grid-container-lg footer">
-
-			<div id="contact" class="grid-container-lg contact box">
-					<h2>Contact Me!</h2>
-					<form class="form">
-						<div class="field">
-							<label for="name">Name:</label>
-							<input type="text" id="name" name="name" placeholder="Armin Tamzarian">
-						</div>
-						<div class="field">
-							<label for="email">Email:</label>
-							<input type="email" id="email" name="email" placeholder="steamed@hams.com">
-						</div>
-						<div class="field">
-							<label for="comments">Comments: </label>
-							<textarea id="comments" placeholder="Type your message here..."></textarea>
-						</div>
-					</form>
-					<button class="btn" type="submit">Contact</button>
-			</div>
-
-			<div class="social">
-				
-				<h3 class="h-two">Follow me!</h3>
-				<a href="https://twitter.com/Krozmo_KMer"><img class="icon" src="assets/images/icons/twitter.png" alt="Twitter"></a>
-				<a href="https://www.linkedin.com/in/njferrari14/"><img class="icon" src="assets/images/icons/linkedin.png" alt="LinkedIn"></a>
-				<a href="https://github.com/njferrari14"><img class="icon" src="assets/images/icons/octocat.png" alt="GitHub"></a>
-
-			</div>
-
-			<p class="copy">&copy; Copyright Nicholas Ferrari 2020</p>
-
-		</footer>
-
 	</main>
 
-</body>
-</html>
+<?php require 'assets/includes/footer.php'; ?>

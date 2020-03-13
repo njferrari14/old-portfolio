@@ -1,0 +1,19 @@
+#0C0F0A -- SMOKEY BLACK
+
+#FF206E -- AWESOME (PINK)
+
+#FBFF12 -- LEMON GLACIER
+
+#41EAD4 -- TURQOISE
+
+#FFFFFF -- WHITE
+
+#11476E -- dark blue (logo)
+
+#c42e41 -- red (logo)
+
+#e82500 -- orange (logo)
+
+#dcaa05 -- yellow (logo)
+
+#f11ca2 -- pink (logo)
