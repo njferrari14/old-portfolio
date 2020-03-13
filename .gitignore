@@ -12,4 +12,4 @@
 *.ico
 *.sql
 *.mssql
-connection.php
+assets/includes/connection.php
