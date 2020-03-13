@@ -12,3 +12,4 @@
 *.ico
 *.sql
 *.mssql
+connection.php
