@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     // create additional headers
     $headers[] = 'Content-Type: text/plain; charset=utf-8';
-    require './assets/includes/processmail.php';
+    require './public_html/assets/includes/processmail.php';
     if ($mailSent) {
         header('Location: thanks.php');
         exit;

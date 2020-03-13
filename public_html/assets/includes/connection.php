@@ -1,13 +1,13 @@
 <?php
 function dbConnect($usertype, $connectionType = 'pdo') {
 	$host = 'localhost';
-	$db = 'njferrari';
+	$db = 'dbnfvzd9e2qf8u';
 	if ($usertype == 'read') {
-		$user = 'nferrari';
-		$pwd = 'PRDDaLkrKcuurIcW';
+		$user = 'u4pdh8wnk4q3e';
+		$pwd = '1Bzi$4fyb5$^';
 	} elseif ($usertype == 'write') {
-		$user = 'nferrari';
-		$pwd = 'PRDDaLkrKcuurIcW';
+		$user = 'u4pdh8wnk4q3e';
+		$pwd = '1Bzi$4fyb5$^';
 	} else {
 		exit('Unrecognized user');
 	}
