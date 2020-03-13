@@ -7,7 +7,7 @@
         <a href="index.php#home" title="Home" class="nav-links h">Home</a>
         <a href="index.php#about" title="About" class="nav-links a">About</a>
         <div class="dropdown">
-        	<button class="dropBtn nav-links">Portfolio
+        	<button class="drop-btn nav-links">Portfolio
         		<i class="arrow fa fa-caret-down"></i>
         	</button>
         	<div class="dropdown-content">

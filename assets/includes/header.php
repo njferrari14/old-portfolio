@@ -3,7 +3,6 @@ require 'assets/includes/connection.php';
 require 'assets/includes/form_insert.php';
 include 'assets/includes/title.php';
 ?>
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -19,7 +18,7 @@ include 'assets/includes/title.php';
     <!-- Styles & Scripts
     ========================================================= -->
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato%7COpen+Sans&display=swap" rel="stylesheet">
 	
 	<!-- Icons
     ========================================================= -->

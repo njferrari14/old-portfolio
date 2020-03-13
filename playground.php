@@ -11,14 +11,14 @@
 
         <div class="pg-container">
             <h3>Projects</h3>
-            <dt>
+            <dl>
                 <dt><a href="assets/projects/google-homepage/index.html">Google Homepage >>></a></dt>
                 <dd><p>This was my first project in The Odin Project. I was tasked with coding a page that looked like the Google homepage to showcase my HTML/CSS skills</p></dd>
                 <dt><a href="assets/projects/rock-paper-scissors/rps.html">Rock Paper Scissors >>></a></dt>
                 <dd><p>I used HTML, CSS, and JavaScript to make an interactive rock paper scissors game</p></dd>
                 <dt><a href="assets/projects/etch-a-sketch/etch-a-sketch.html">Etch-a-Sketch >>></a></dt>
                 <dd><p>I primarily used JavaScript to make an app that sort of functions like Etch-a-Sketch. It lets you specify the size of a grid, populates the grid with blank squares, then changes the color of the squares when you hover over them with the cursor. You can choose a specific color, randomize the colors, and reset the grid.</p></dd>
-            </dt>
+            </dl>
         </div>
 
     </main>
