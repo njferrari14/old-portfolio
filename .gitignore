@@ -10,3 +10,5 @@
 *.svg
 *.zip
 *.ico
+*.sql
+*.mssql
