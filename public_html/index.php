@@ -39,7 +39,7 @@
 			<div class="work">
 
 					<div class="example e-one e-left grid-container-lg">
-						<a class="e-link" href="splendorous.html">
+						<a class="e-link" href="http://site12.wdd.francistuttle.edu/projects/splendorous/index.html">
 							<img class="e-pic" src="assets/images/splendorous.png" alt="Create the Code">
 						</a>
 						
@@ -55,7 +55,7 @@
 					</div>
 
 					<div class="example e-right grid-container-lg">
-						<a class="e-link" href="discog.html">
+						<a class="e-link" href="http://site12.wdd.francistuttle.edu/projects/chromatics/index.html">
 							<img class="e-pic" src="assets/images/chromatics.png" alt="Discography Project">
 						</a>
 
@@ -71,7 +71,7 @@
 					</div>
 
 					<div class="example e-left grid-container-lg">
-						<a class="e-link" href="revamp.html">
+						<a class="e-link" href="http://site12.wdd.francistuttle.edu/projects/queen/index.php">
 							<img class="e-pic" src="assets/images/queen.png" alt="Revamp Project">
 						</a>
 
