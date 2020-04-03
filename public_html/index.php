@@ -44,7 +44,7 @@
 						</a>
 						
 						<div class="blurb">
-							<a href="splendorous.html"><h4 class="e-header">Create the Code</h4></a>
+							<a href="http://site12.wdd.francistuttle.edu/projects/splendorous/index.html"><h4 class="e-header">Create the Code</h4></a>
 							<p>
 								Splendorous is a website template. This was my first project. I was given an image of what the finished site should look like and was tasked with coding a "pixel perfect" web page.
 							</p>
@@ -60,7 +60,7 @@
 						</a>
 
 						<div class="blurb">
-							<a href="discog.html"><h4 class="e-header">Discography</h4></a>
+							<a href="http://site12.wdd.francistuttle.edu/projects/chromatics/index.htm"><h4 class="e-header">Discography</h4></a>
 							<p>
 								I designed and coded a discography website for Chromatics, an indie low-fi rock band. I used Photoshop to design the logo and mock up style-tiles for feedback. I coded the site using the Bootstrap framework.
 							</p>
@@ -76,7 +76,7 @@
 						</a>
 
 						<div class="blurb">
-							<a href="revamp.html"><h4 class="e-header">Discography Revamp</h4></a>
+							<a href="http://site12.wdd.francistuttle.edu/projects/queen/index.php"><h4 class="e-header">Discography Revamp</h4></a>
 							<p>
 								I was tasked with <a href="http://site36.wdiv.francistuttle.edu/">Rikki Eichler</a>'s discography project to revamp using PHP. I reorganized the code in a PHP framework; added back-end functionality and dynamically-generated content using a database in MySQL and phpMyAdmin; and added an admin section for updating content on the "albums" page.
 							</p>
