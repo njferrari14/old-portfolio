@@ -862,7 +862,7 @@ MEDIA QUERIES
 	}
 
 	.example {
-		padding: 150px;
+		padding: 150px 0 !important;
 	}
 
 }
