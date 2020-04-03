@@ -44,7 +44,7 @@
 						</a>
 						
 						<div class="blurb">
-							<h4 class="e-header">Create the Code</h4>
+							<a href="splendorous.html"><h4 class="e-header">Create the Code</h4></a>
 							<p>
 								Splendorous is a website template. This was my first project. I was given an image of what the finished site should look like and was tasked with coding a "pixel perfect" web page.
 							</p>
@@ -60,7 +60,7 @@
 						</a>
 
 						<div class="blurb">
-							<h4 class="e-header">Discography</h4>
+							<a href="discog.html"><h4 class="e-header">Discography</h4></a>
 							<p>
 								I designed and coded a discography website for Chromatics, an indie low-fi rock band. I used Photoshop to design the logo and mock up style-tiles for feedback. I coded the site using the Bootstrap framework.
 							</p>
@@ -76,7 +76,7 @@
 						</a>
 
 						<div class="blurb">
-							<h4 class="e-header">Discography Revamp</h4>
+							<a href="revamp.html"><h4 class="e-header">Discography Revamp</h4></a>
 							<p>
 								I was tasked with <a href="http://site36.wdiv.francistuttle.edu/">Rikki Eichler</a>'s discography project to revamp using PHP. I reorganized the code in a PHP framework; added back-end functionality and dynamically-generated content using a database in MySQL and phpMyAdmin; and added an admin section for updating content on the "albums" page.
 							</p>
@@ -92,7 +92,7 @@
 							</a>
 						
 						<div class="blurb">
-							<h4 class="e-header">BPA: Website Design Team, Project Manager and Content Creator</h4>
+							<a href="https://terranavis.life/html/index.php"><h4 class="e-header">BPA: Website Design Team, Project Manager and Content Creator</h4></a>
 							<p>
 								I participated in Business Professionals of America's Website Design Team competition with <a href="savammah">Savannah Skinner</a> and <a href="noshin">Noshin Rahman</a>. As Content Creator, I gathered, researched, wrote and edited the content of the site. As Project Manager, I coordinated the team's efforts using Basecamp, Slack, GitHub, Dropbox and pCloud. I designed an HTML slideshow for our presentation to judges at the regional and national levels.
 							</p>
