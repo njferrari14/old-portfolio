@@ -861,4 +861,8 @@ MEDIA QUERIES
 		margin-left: 10px;
 	}
 
+	.example {
+		padding: 150px;
+	}
+
 }
