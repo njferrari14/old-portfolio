@@ -869,4 +869,20 @@ MEDIA QUERIES
 		font-size: 1.4em !important;
 	}
 
+	.logo-sm {
+		display: none;
+	}
+
+	.pg-body {
+		grid-template-areas: 
+			"h-one h-one h-one h-one h-one h-one h-one h-one"
+			". list list list list list list .";
+	}
+
+	@media only screen and (max-width: 400px) {
+		nav a, nav button {
+			font-size: .5em !important;
+		}
+	}
+
 }
