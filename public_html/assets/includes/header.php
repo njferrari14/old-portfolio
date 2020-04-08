@@ -9,9 +9,9 @@ include 'assets/includes/title.php';
 
 	<!-- Basic Page Needs
     ========================================================= -->
-	<title>njferrari - <?= $title ?? '' ?></title>
+	<title>Web Developer - njferrari | <?= $title ?? '' ?></title>
 	<meta charset="utf-8">
-    <meta name="description" content="NJ Ferrari Portfolio">
+    <meta name="description" content="Hey, I'm Nick! This is my portfolio. I'm a Back-end Web Developer who's proficient in HTML, CSS, PHP, JavaScript and more!">
     <meta name="author" content="Nicholas J Ferrari">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 

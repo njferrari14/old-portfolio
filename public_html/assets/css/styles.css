@@ -131,15 +131,12 @@ body {
     	-moz-background-size: cover;
     	-o-background-size: cover;
     	content: '';
-		max-width: 100%;
 		min-width: 100%;
-		max-height: 100%;
 		min-height: 100%;
 		position: absolute;
 		top: 0;
 		left: 0;
 		opacity: .10;
-		will-change: transform;
 		z-index: -1;
 	}
 
@@ -152,7 +149,7 @@ a {
 	color: #25ced1;
 }
 
-	a:hover {
+	a:hover, .e-header:hover {
 		color: #df2879;
 	}
 
@@ -423,7 +420,6 @@ PORTFOLIO
 .example {
 	color: #fff;
 	padding: 250px 0;
-	height: 100%;
 	position: relative;
 }
 	.example:before {
@@ -460,10 +456,6 @@ PORTFOLIO
 
 	.example:last-child {
 		margin-bottom: 100px;
-	}
-	
-	.example:not(.e-one) {
-		padding: 100px 0;
 	}
 
 	.e-left {
