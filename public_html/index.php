@@ -22,7 +22,7 @@
 
 		<div class="grid-container-lg about">
 
-			<img class="pic" src="assets/images/me.png" alt="Pic of Nick">
+			<img class="pic" src="assets/images/me.jpg" alt="Pic of Nick">
 
 			<div id="bio" class="bio">
 				<p>Hi, I'm Nick. I like to create unique user experiences. I started by writing role-playing adventures, murder-mystery parties, and other creative events. Then, while taking an introductory course in C++, I realized I liked to code, and if I developed that skill further, I could learn to create anything I wanted on the web. So I enrolled in Francis Tuttle's Web Development course as a Back-end Developer. Now I code responsive, dynamic websites and applications. In my creations, I strive for novelty, minimalism, and immersion.</p>
