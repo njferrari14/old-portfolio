@@ -247,7 +247,7 @@ nav {
 	float: left;
 }
 
-	.nav-links:hover, .nav-links:focus, .active {
+	.nav-links:hover, .nav-links:focus {
 		color: #df2879;
 		outline: none;
 	}
