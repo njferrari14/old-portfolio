@@ -273,7 +273,7 @@ nav {
 
 	.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content a, .dropdown:focus-within .dropdown-content, .dropdown:focus-within .dropdown-content a {
 		visibility: visible;
-		line-height: 1.5;
+		line-height: 2;
 	}
 
 .dropdown-content a {
@@ -348,7 +348,7 @@ ABOUT ME
 
 	.about:before {
 		content: '';
-		background: url("../images/mania.png") left top/cover no-repeat fixed;
+		background: url("../images/mania.jpg") left top/cover no-repeat fixed;
 		-webkit-background-size: cover;
     	-moz-background-size: cover;
     	-o-background-size: cover;
@@ -437,20 +437,20 @@ PORTFOLIO
 	}
 
 	.example:first-child:before {
-		background: url("../images/splendorous-bg.png") center/cover no-repeat fixed;
+		background: url("../images/splendorous-bg.jpg") center/cover no-repeat fixed;
 	}
 
 
 	.example:nth-child(2):before {
-		background: url("../images/chromatics-bg.png") center/cover no-repeat fixed;
+		background: url("../images/chromatics-bg.jpg") center/cover no-repeat fixed;
 
 	}
 	.example:nth-last-child(2):before {
-		background: url("../images/queen-bg.png") center/cover no-repeat fixed;
+		background: url("../images/queen-bg.jpg") center/cover no-repeat fixed;
 
 	}
 	.example:last-child:before {
-		background: url("../images/bpa-bg.png") center/cover no-repeat fixed;
+		background: url("../images/bpa-bg.jpg") center/cover no-repeat fixed;
 	}
 
 	.example:last-child {
@@ -789,11 +789,16 @@ MEDIA QUERIES
 	}
 
 	.nav-links {
-		font-size: .7em;
+		font-size: 1em;
+		padding: 0 5px;
+	}
+
+	.dropdown-content a {
+		font-size: 1.2em;
 	}
 
 	.dropdown-content {
-		top: 25px;
+		top: 36px;
 		font-size: .6em;
 	}
 

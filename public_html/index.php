@@ -40,7 +40,7 @@
 
 					<div class="example e-one e-left grid-container-lg">
 						<a class="e-link" href="http://site12.wdd.francistuttle.edu/projects/splendorous/index.html">
-							<img class="e-pic" src="assets/images/splendorous.png" alt="Create the Code">
+							<img class="e-pic" src="assets/images/splendorous.jpg" alt="Create the Code">
 						</a>
 						
 						<div class="blurb">
@@ -56,7 +56,7 @@
 
 					<div class="example e-right grid-container-lg">
 						<a class="e-link" href="http://site12.wdd.francistuttle.edu/projects/chromatics/index.html">
-							<img class="e-pic" src="assets/images/chromatics.png" alt="Discography Project">
+							<img class="e-pic" src="assets/images/chromatics.jpg" alt="Discography Project">
 						</a>
 
 						<div class="blurb">
@@ -72,7 +72,7 @@
 
 					<div class="example e-left grid-container-lg">
 						<a class="e-link" href="http://site12.wdd.francistuttle.edu/projects/queen/index.php">
-							<img class="e-pic" src="assets/images/queen.png" alt="Revamp Project">
+							<img class="e-pic" src="assets/images/queen.jpg" alt="Revamp Project">
 						</a>
 
 						<div class="blurb">
@@ -88,7 +88,7 @@
 
 					<div class="example e-right grid-container-lg">
 							<a class="e-link" href="https://terranavis.life/html/index.php">
-								<img class="e-pic" src="assets/images/bpa.png" alt="BPA Project">
+								<img class="e-pic" src="assets/images/bpa.jpg" alt="BPA Project">
 							</a>
 						
 						<div class="blurb">
