@@ -709,15 +709,21 @@ THANKS
 .ty-body {
 	grid-template-areas: 
 		"logo logo h-one h-one h-one h-one . ."
-		"logo logo h-two h-two h-two h-two . .";
-		margin-bottom: 200px;
+		"logo logo h-two h-two h-two h-two . ."
+		". . b b b b . .";
+	margin-bottom: 200px;
 }
 
 .ty-p {
 	grid-area: h-two;
 	justify-self: center;
 	font-size: 1.2em;
-	color: #25ced1;
+	color: #f4c803;
+}
+
+.ty-b {
+	grid-area: b;
+	justify-self: center;
 }
 /**************************************
 MEDIA QUERIES

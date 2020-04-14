@@ -13,7 +13,12 @@ require 'assets/includes/header.php';
         <h1 class="ty-h">Thank you!</h1>
 
         <p class="ty-p">I will get back to you as soon as possible, provided you are human, cetacean, or are otherwise able to pass the turing test.</p>
+        <br>
+        <br>
+
+        <a href="https://njferrari.com/" class="ty-b">Go back home >>></a>
 
     </main>
 
-    <?php require 'assets/includes/footer.php'; ?>
+ </body>
+ </html>

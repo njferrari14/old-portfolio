@@ -1,6 +1,6 @@
 <div id="contact" class="grid-container-lg contact box">
 	<h2>Contact Me!</h2>
-	<form method="post" class="form grid-container">
+	<form method="post" class="form grid-container" action="thanks.php">
 		<div class="fields">
 			<div class="field">
 				<label for="name">Name:
