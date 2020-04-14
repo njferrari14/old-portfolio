@@ -125,20 +125,20 @@ body {
 	margin: 0 auto;
 }
 
-	body:before {
-		background: url("../images/bricks.jpg") left top/cover no-repeat fixed;
-		-webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
-    	content: '';
-		min-width: 100%;
-		min-height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: .10;
-		z-index: -1;
-	}
+body:before {
+	background: url("../images/bricks.jpg") left top/cover no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	content: '';
+	min-width: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .10;
+	z-index: -1;
+}
 
 p {
 	font-family: 'Lato';
@@ -247,10 +247,10 @@ nav {
 	float: left;
 }
 
-	.nav-links:hover, .nav-links:focus {
-		color: #df2879;
-		outline: none;
-	}
+.nav-links:hover, .nav-links:focus {
+	color: #df2879;
+	outline: none;
+}
 
 .drop-btn {
 	border: none;
@@ -271,10 +271,10 @@ nav {
 	border-top: none;
 }
 
-	.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content a, .dropdown:focus-within .dropdown-content, .dropdown:focus-within .dropdown-content a {
-		visibility: visible;
-		line-height: 2;
-	}
+.dropdown:hover .dropdown-content, .dropdown:hover .dropdown-content a, .dropdown:focus-within .dropdown-content, .dropdown:focus-within .dropdown-content a {
+	visibility: visible;
+	line-height: 2;
+}
 
 .dropdown-content a {
 	float: none;
@@ -298,9 +298,9 @@ nav {
 	transition: transform .2s;
 }
 
-	.dropdown:hover .arrow, .dropdown:focus-within .arrow {
-		transform: rotate(0);
-	}
+.dropdown:hover .arrow, .dropdown:focus-within .arrow {
+	transform: rotate(0);
+}
 
 /**************************************
 HEADER
@@ -346,21 +346,21 @@ ABOUT ME
 	border-bottom: 2px dashed #f4c803;
 }
 
-	.about:before {
-		content: '';
-		background: url("../images/mania.jpg") left top/cover no-repeat fixed;
-		-webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: .15;
-		will-change: transform;
-		z-index: -1;
-	}
+.about:before {
+	content: '';
+	background: url("../images/mania.jpg") left top/cover no-repeat fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .15;
+	will-change: transform;
+	z-index: -1;
+}
 
 h2 {
 	grid-area: h-two;
@@ -387,10 +387,10 @@ h2 {
 	align-self: center;
 }
 
-	.bio p {
-		padding: 10px;
-		z-index: 1;
-	}
+.bio p {
+	padding: 10px;
+	z-index: 1;
+}
 
 /**************************************
 PORTFOLIO
@@ -422,58 +422,58 @@ PORTFOLIO
 	padding: 250px 0;
 	position: relative;
 }
-	.example:before {
-		-webkit-background-size: cover;
-    	-moz-background-size: cover;
-    	-o-background-size: cover;
-    	content: '';
-		width: 100%;
-		height: 100%;
-		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: .15;
-		z-index: -1;
-	}
+.example:before {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: .15;
+	z-index: -1;
+}
 
-	.example:first-child:before {
-		background: url("../images/splendorous-bg.jpg") center/cover no-repeat fixed;
-	}
+.example:first-child:before {
+	background: url("../images/splendorous-bg.jpg") center/cover no-repeat fixed;
+}
 
 
-	.example:nth-child(2):before {
-		background: url("../images/chromatics-bg.jpg") center/cover no-repeat fixed;
+.example:nth-child(2):before {
+	background: url("../images/chromatics-bg.jpg") center/cover no-repeat fixed;
 
-	}
-	.example:nth-last-child(2):before {
-		background: url("../images/queen-bg.jpg") center/cover no-repeat fixed;
+}
+.example:nth-last-child(2):before {
+	background: url("../images/queen-bg.jpg") center/cover no-repeat fixed;
 
-	}
-	.example:last-child:before {
-		background: url("../images/bpa-bg.jpg") center/cover no-repeat fixed;
-	}
+}
+.example:last-child:before {
+	background: url("../images/bpa-bg.jpg") center/cover no-repeat fixed;
+}
 
-	.example:last-child {
-		margin-bottom: 100px;
-	}
+.example:last-child {
+	margin-bottom: 100px;
+}
 
-	.e-left {
-	grid-template-areas: 
-		" . e-link e-link . blurb blurb blurb ."
-	}
+.e-left {
+grid-template-areas: 
+	" . e-link e-link . blurb blurb blurb ."
+}
 
-	.e-right {
-	grid-template-areas: 
-		" . blurb blurb blurb . e-link e-link ."
-	}
+.e-right {
+grid-template-areas: 
+	" . blurb blurb blurb . e-link e-link ."
+}
 
 .e-pic {
 	border: 10px double #25ced1;
 	border-radius: 500px;
 }
-	.e-pic:hover {
-		border-color: #df2879;
-	}
+.e-pic:hover {
+	border-color: #df2879;
+}
 
 .e-link {
 	 grid-area: e-link;
@@ -503,7 +503,7 @@ PORTFOLIO
 	grid-template-areas: 
 		". . . h-three h-three . . ."
 		"skill skill skill skill skill skill skill skill";
-		justify-content: space-evenly;
+	justify-content: space-evenly;
 	margin-bottom: 100px;
 }
 
@@ -557,7 +557,7 @@ FOOTER
 	grid-template-areas: 
 		". . contact contact contact contact . ."
 		"copy copy copy . social social social social";
-		padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 .footer h2 {
@@ -579,14 +579,15 @@ FOOTER
 		". btn btn .";
 	margin-bottom: 20px;
 }
-	.form input, .form textarea {
-		width: 75%;
-		border-radius: 5px;
-		min-width: 50%;
-		max-width: 100%;
-		min-height: 48px;
-		max-height: 200px;
-	}
+
+.form input, .form textarea {
+	width: 75%;
+	border-radius: 5px;
+	min-width: 50%;
+	max-width: 100%;
+	min-height: 48px;
+	max-height: 200px;
+}
 
 .field input, .field textarea {
 	width: 100%;
@@ -611,37 +612,39 @@ FOOTER
 	border-radius: 20px;
 	box-shadow: 2px 3px #505050;
 }
-	.btn:active, .btn:focus {
-		outline: none;
-	}
 
-	.btn:hover {
-		background-color: #808080;
-		text-shadow: 2px 2px #101010;
-	}
+.btn:active, .btn:focus {
+	outline: none;
+}
 
-	.btn:active {
-		background-color: #505050;
-		color: #c29f02;
-		text-shadow: -1px -1px #101010;
-		box-shadow: 2px 3px #707070;
-	}
+.btn:hover {
+	background-color: #808080;
+	text-shadow: 2px 2px #101010;
+}
+
+.btn:active {
+	background-color: #505050;
+	color: #c29f02;
+	text-shadow: -1px -1px #101010;
+	box-shadow: 2px 3px #707070;
+}
 
 .social {
 	grid-area: social;
 	text-align: center;
 }
-	.social h3 {
-		display: inline-block;
-		margin-bottom: 0;
-		line-height: 1.1em;
-	}
 
-	.social a {
-		display: inline-block;
-		line-height: 10px;
-		margin-left: 40px;
-	}
+.social h3 {
+	display: inline-block;
+	margin-bottom: 0;
+	line-height: 1.1em;
+}
+
+.social a {
+	display: inline-block;
+	line-height: 10px;
+	margin-left: 40px;
+}
 
 .icon {
 	display: inline-block;
@@ -649,14 +652,14 @@ FOOTER
 	width: 35px;
 }
 
-	a:last-child .icon {
-		padding: 2.955px 0;
-		background-color: #fff;
-	}
+a:last-child .icon {
+	padding: 2.955px 0;
+	background-color: #fff;
+}
 
-	.icon:hover, .icon:focus, .icon:active {
-		opacity: .5;
-	}
+.icon:hover, .icon:focus, .icon:active {
+	opacity: .5;
+}
 
 .copy {
 	grid-area: copy;
