@@ -78,7 +78,7 @@
 						<div class="blurb">
 							<a href="http://site12.wdd.francistuttle.edu/projects/queen/index.php"><h4 class="e-header">Discography Revamp</h4></a>
 							<p>
-								I was tasked with <a href="http://site36.wdiv.francistuttle.edu/">Rikki Eichler</a>'s discography project to revamp using PHP. I reorganized the code in a PHP framework; added back-end functionality and dynamically-generated content using a database in MySQL and phpMyAdmin; and added an admin section for updating content on the "albums" page.
+								I was tasked with <a href="http://site36.wdd.francistuttle.edu/">Rikki Eichler</a>'s discography project to revamp using PHP. I reorganized the code in a PHP framework; added back-end functionality and dynamically-generated content using a database in MySQL and phpMyAdmin; and added an admin section for updating content on the "albums" page.
 							</p>
 							<p class="skills-used">
 								HTML5, CSS3, PHP, PDO, SQL, MySQL, Bootstrap, Apache, XAMPP, phpMyAdmin
@@ -94,7 +94,7 @@
 						<div class="blurb">
 							<a href="https://terranavis.life/html/index.php"><h4 class="e-header">BPA: Website Design Team, Project Manager and Content Creator</h4></a>
 							<p>
-								I participated in Business Professionals of America's Website Design Team competition with <a href="savammah">Savannah Skinner</a> and <a href="noshin">Noshin Rahman</a>. As Content Creator, I gathered, researched, wrote and edited the content of the site. As Project Manager, I coordinated the team's efforts using Basecamp, Slack, GitHub, Dropbox and pCloud. I designed an HTML slideshow for our presentation to judges at the regional and national levels.
+								I participated in Business Professionals of America's Website Design Team competition with <a href="https://savannahskinner.com/">Savannah Skinner</a> and <a href="http://noshinr.com/">Noshin Rahman</a>. As Content Creator, I gathered, researched, wrote and edited the content of the site. As Project Manager, I coordinated the team's efforts using Basecamp, Slack, GitHub, Dropbox and pCloud. I designed an HTML slideshow for our presentation to judges at the regional and national levels.
 							</p>
 							<p class="skills-used">
 								HTML5, CSS3, PHP, JavaScript, Git, GitHub, Apache, XAMPP, Photoshop, Illustrator
