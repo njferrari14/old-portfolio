@@ -17,7 +17,7 @@ include 'assets/includes/title.php';
 
     <!-- Styles & Scripts
     ========================================================= -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
     <link href="https://fonts.googleapis.com/css?family=Lato%7COpen+Sans&display=swap" rel="stylesheet">
 	
 	<!-- Icons
